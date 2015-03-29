@@ -3,4 +3,18 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
+/* Variables */
+$f-family : colossalis;
+$f-color : #ec8e08;
+
+
 @import "normalize";
+@font-face{
+	font-family : colossalis;
+	src: url('../font/Colossalis Bold.ttf')
+}
+
+h1, h2, h3, h4, h5, h6{
+	color : $f-color;
+	font-family:$f-family, impact, sans-serif
+}
