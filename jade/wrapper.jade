@@ -1,0 +1,99 @@
+include config
+
+- var jQuery = false
+
+
+doctype
+html(lang="en")
+	head
+		title
+			block title
+				| #{PageTitle}
+		meta( charset='utf-8' )
+		meta(http-uquiv='x-ua-compatible', content='IE=edge')
+		meta(name="viewport", content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1")
+		meta(name="description" contant=MetaDesc)
+		<!--[if IEcscs 9]>
+		script(src='http://html5shiv.googlecode.com/svn/trunk/html5.js')
+		<![endif]-->
+		link(rel="stylesheet",href="assets/awesome/css/font-awesome.min.css")
+		link(rel="stylesheet",href="assets/css/stylesheets/screen.css")
+	body
+		header
+			.logo
+				h2 BD 
+				h3 Business Design
+			.social
+				p Join the Conversation
+				ul
+					li: i.fa.fa-facebook-square
+					li: i.fa.fa-twitter-square
+					li: i.fa.fa-youtube-square
+			nav
+				ul
+					//- each val, index in {'Home':'fa fa-home','About Us':'fa fa-group','Services':'fa fa-wrench','Blog':'fa fa-pencil','Contact':'fa fa-envelope'}
+					//- 	li(class=(title === index ? 'active' : ''))
+					//- 		a(href='#') 
+					//- 			i(class=val)
+					//- 			|  #{index}
+
+					li(class=(title === 'home' ? 'active' : ''))
+						a(href="#")
+							i.fa.fa-home 
+							|  Home
+					li(class=(title === 'aboutus' ? 'active' : '')) 
+						a(href="#")
+							i.fa.fa-group 
+							|  About Us
+					li(class=(title === 'services' ? 'active' : '')) 
+						a(href="#")
+							i.fa.fa-wrench 
+							|  Services
+					li(class=(title === 'blog' ? 'active' : '')) 
+						a(href="#")
+							i.fa.fa-pencil 
+							|  Blog
+					li(class=(title === 'contact' ? 'active' : '')) 
+						a(href="#")
+							i.fa.fa-envelope 
+							|  Contact
+				form
+					span.search
+					input(
+						type = "text"
+						placeholder = "search"
+						)
+					a(href="#")
+						i.fa.fa-search
+		block content
+
+		footer
+			.footer-row
+				.column-one-thirds
+					h3 Get in Touch
+					p
+						i.fa.fa-map-marker
+						|  1234 5th St. Dallas, TX, 75545
+					p
+						i.fa.fa-envelope
+						|  contact@website.com
+
+				.column-two-thirds
+					ul.thumbnails
+						- var n = 1
+						while n < 11
+							- var m = n++
+							li
+								a(href="#")
+									img(
+											src = "assets/images/thumb/"+ m + '.jpg'
+											alt= "picture"+ m
+											width = '50'
+											height = '50'
+										)
+			
+			span.copyright &copy;copyright 2013, Business Design. All rights reserved.
+
+		if jQuery
+			script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js")
+			

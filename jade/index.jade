@@ -1,0 +1,67 @@
+extends wrapper
+
+block config
+	-var title='home'
+//- - var jQuery = false
+
+
+block title
+	| Business Design
+
+block content
+	.slider
+		a.slider-prev(href = "#"): i.fa.fa-chevron-circle-left
+		a.slider-right(href = "#"): i.fa.fa-chevron-circle-right
+		.slide
+			img(
+				src = "assets/images/content/mobile-devices.png"
+				class = "slide-image"
+				alt = ""
+			)
+			.slider-text
+				h3.slider-title LEARN MORE 
+					i.fa.fa-angle-double-right
+					br
+					span Find out how we can help your business
+
+	.row
+		.column-two-thirds
+			h3 Who We Are 
+			p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis itaque laborum perferendis error, mollitia quae sapiente ipsa sed voluptatem, quidem eius architecto dolores dignissimos est doloremque, provident repellendus tempora aut.
+			p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga exercitationem ipsa, nostrum animi modi ad eum eaque dolore facere, minima? 
+			p Distinctio deserunt ex, blanditiis quasi molestias fugit modi quod facere assumenda tempore deleniti error debitis accusantium quisquam tenetur ducimus temporibus, sint, adipisci.
+		.column-one-thirds
+			h3 From the Blog
+			ul.fa-ul
+				li
+					i.fa-li.fa.fa-pencil
+					strong Lorem ipsum dolor sit amet.
+					br
+					| June 1,2013 by Mike Milton
+				li
+					i.fa-li.fa.fa-pencil
+					strong Distinctio re deleniti error debitis .
+					br
+					| June 1,2013 by Mike Milton
+				li
+					i.fa-li.fa.fa-pencil
+					strong Distinctio perferendis culpa neque error, rem!.
+					br
+					| June 1,2013 by Mike Milton
+				li
+					i.fa-li.fa.fa-pencil
+					strong Lorem ipsum dolor sit amet.
+					br
+					| June 1,2013 by Mike Milton
+
+	h3 Meet the Team 
+	.row
+		each val, index in {'Janice Thomson':'Founder/President','Mike Milton':'Lead Programmer','Gary Johnson':'Interactive Producer','Gordon Sparrow':'Designer'}
+			.column-one-fourth
+				.image-container
+					img(src="http://placehold.it/220x160", width="220", height="160")
+					.image-caption
+						strong #{index}
+						br
+						| #{val}
+					p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis voluptates sit dolores reiciendis iure sint rem incidunt quas dignissimos dolore fugit, repellendus consectetur placeat, in ut cum est voluptate saepe.
