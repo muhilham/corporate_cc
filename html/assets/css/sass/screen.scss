@@ -185,7 +185,12 @@ $_fsx : 30px;
 		font-size: $_fsx;
 		text-decoration: none;
 		@include opacity(0.5);
+		@include transition(opacity .5s);
 		top: ($_h/2) - ($_fsx/2);
+
+		&:hover{
+			@include opacity(1);
+		}
 	}
 	
 	$offset : 11px;

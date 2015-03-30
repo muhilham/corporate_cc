@@ -443,13 +443,22 @@ nav .search a {
   text-decoration: none;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
   opacity: 0.5;
+  -moz-transition: opacity 0.5s;
+  -o-transition: opacity 0.5s;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
   top: 115px;
 }
-/* line 192, ../sass/screen.scss */
+/* line 191, ../sass/screen.scss */
+.slider .slider-prev:hover, .slider .slider-next:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+}
+/* line 197, ../sass/screen.scss */
 .slider .slider-prev {
   left: 11px;
 }
-/* line 195, ../sass/screen.scss */
+/* line 200, ../sass/screen.scss */
 .slider .slider-next {
   right: 11px;
 }
