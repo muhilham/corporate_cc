@@ -409,6 +409,20 @@ nav ul.main-nav li a:hover {
   background-color: #eee;
 }
 /* line 152, ../sass/screen.scss */
-nav form {
+nav .search {
   float: right;
+  color: #a1a1a1;
+  margin: 10px 10px 0 0;
+}
+/* line 156, ../sass/screen.scss */
+nav .search input {
+  border: 1px solid #a1a1a1;
+  background-color: #eee;
+  border-radius: 300px;
+  padding-left: 8px;
+}
+/* line 163, ../sass/screen.scss */
+nav .search a {
+  color: #a1a1a1;
+  text-decoration: none;
 }

@@ -149,7 +149,20 @@ nav{
 		}
 	}
 
-	form{
+	.search{
 		float: right;
+		color: $col-h3-logo;
+		margin: 10px 10px 0 0;
+		input{
+			border: 1px solid $col-h3-logo;
+			background-color: $col-nav-hov;
+			border-radius:300px;
+			padding-left:8px;
+			// text-align: center;
+		}
+		a{
+			color: $col-h3-logo;
+			text-decoration: none;
+		}
 	}
 }
