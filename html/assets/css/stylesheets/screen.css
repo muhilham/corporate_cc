@@ -294,14 +294,19 @@ h1, h2, h3, h4, h5, h6 {
   font-family: colossalis, impact, sans-serif;
 }
 
-/* line 37, ../sass/screen.scss */
+/* line 36, ../sass/screen.scss */
+.logo {
+  float: left;
+  max-width: 50%;
+}
+/* line 40, ../sass/screen.scss */
 .logo h2 {
   font-size: 3em;
   display: inline-block;
   margin-top: 0px;
   padding-right: 5px;
 }
-/* line 43, ../sass/screen.scss */
+/* line 46, ../sass/screen.scss */
 .logo h3 {
   border-left: 2px solid #a1a1a1;
   color: #a1a1a1;
@@ -312,23 +317,35 @@ h1, h2, h3, h4, h5, h6 {
   top: -.2em;
 }
 
-/* line 55, ../sass/screen.scss */
+/* line 57, ../sass/screen.scss */
+.social {
+  float: right;
+  max-width: 50%;
+  text-align: right;
+}
+/* line 62, ../sass/screen.scss */
 .social ul {
   list-style-type: none;
   padding-left: 0;
   margin-top: 0;
 }
-/* line 60, ../sass/screen.scss */
+/* line 67, ../sass/screen.scss */
 .social ul li {
   display: inline-block;
 }
-/* line 63, ../sass/screen.scss */
+/* line 70, ../sass/screen.scss */
 .social ul li a i {
   color: #a1a1a1;
   font-size: 2.5em;
   text-decoration: none;
 }
-/* line 72, ../sass/screen.scss */
+/* line 78, ../sass/screen.scss */
 .social p {
-  margin-bottom: 2px;
+  font-size: .86em;
+  margin: 10px 0 2px 0;
+}
+
+/* line 84, ../sass/screen.scss */
+nav {
+  clear: both;
 }

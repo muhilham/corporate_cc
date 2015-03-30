@@ -34,6 +34,9 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .logo {
+	float:left;
+	max-width: 50%;
+
 	h2{
 		font-size: 3em;
 		display: inline-block;
@@ -52,6 +55,10 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .social{
+	float:right;
+	max-width: 50%;
+	text-align: right;
+
 	ul{
 		list-style-type: none;
 		padding-left: 0;
@@ -65,11 +72,15 @@ h1, h2, h3, h4, h5, h6{
 				font-size: 2.5em;
 				text-decoration: none;
 			}
-			
 		}
 	}
 
 	p{
-		margin-bottom: 2px;
+		font-size: .86em;
+		margin: 10px 0 2px 0;
 	}
+}
+
+nav{
+	clear: both;
 }
