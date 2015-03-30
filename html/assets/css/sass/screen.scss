@@ -9,6 +9,8 @@ $f-color : #ec8e08;
 $f-body : "Trbuchet MS", Tahoma, Arial, sans-serif;
 $f-body-col : #888;
 
+$col-h3-logo : #a1a1a1;
+
 
 @import "normalize";
 @font-face{
@@ -29,4 +31,22 @@ body{
 h1, h2, h3, h4, h5, h6{
 	color : $f-color;
 	font-family:$f-family, impact, sans-serif
+}
+
+.logo {
+	h2{
+		font-size: 3em;
+		display: inline-block;
+		margin-top: 0px;
+		padding-right: 5px;
+	}
+	h3{
+		border-left: 2px solid $col-h3-logo;
+		color: $col-h3-logo;
+		font: 1.75em $f-body;
+		display: inline-block;
+		padding-left: 10px;
+		position: relative;
+		top: -.2em;
+	}
 }
