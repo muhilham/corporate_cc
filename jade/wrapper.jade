@@ -19,53 +19,54 @@ html(lang="en")
 		link(rel="stylesheet",href="assets/awesome/css/font-awesome.min.css")
 		link(rel="stylesheet",href="assets/css/stylesheets/screen.css")
 	body
-		header
-			.logo
-				h2 BD 
-				h3 Business Design
-			.social
-				p Join the Conversation
-				ul
-					li: i.fa.fa-facebook-square
-					li: i.fa.fa-twitter-square
-					li: i.fa.fa-youtube-square
-			nav
-				ul
-					//- each val, index in {'Home':'fa fa-home','About Us':'fa fa-group','Services':'fa fa-wrench','Blog':'fa fa-pencil','Contact':'fa fa-envelope'}
-					//- 	li(class=(title === index ? 'active' : ''))
-					//- 		a(href='#') 
-					//- 			i(class=val)
-					//- 			|  #{index}
+		.container
+			header
+				.logo
+					h2 BD 
+					h3 Business Design
+				.social
+					p Join the Conversation
+					ul
+						li: i.fa.fa-facebook-square
+						li: i.fa.fa-twitter-square
+						li: i.fa.fa-youtube-square
+				nav
+					ul
+						//- each val, index in {'Home':'fa fa-home','About Us':'fa fa-group','Services':'fa fa-wrench','Blog':'fa fa-pencil','Contact':'fa fa-envelope'}
+						//- 	li(class=(title === index ? 'active' : ''))
+						//- 		a(href='#') 
+						//- 			i(class=val)
+						//- 			|  #{index}
 
-					li(class=(title === 'home' ? 'active' : ''))
+						li(class=(title === 'home' ? 'active' : ''))
+							a(href="#")
+								i.fa.fa-home 
+								|  Home
+						li(class=(title === 'aboutus' ? 'active' : '')) 
+							a(href="#")
+								i.fa.fa-group 
+								|  About Us
+						li(class=(title === 'services' ? 'active' : '')) 
+							a(href="#")
+								i.fa.fa-wrench 
+								|  Services
+						li(class=(title === 'blog' ? 'active' : '')) 
+							a(href="#")
+								i.fa.fa-pencil 
+								|  Blog
+						li(class=(title === 'contact' ? 'active' : '')) 
+							a(href="#")
+								i.fa.fa-envelope 
+								|  Contact
+					form
+						span.search
+						input(
+							type = "text"
+							placeholder = "search"
+							)
 						a(href="#")
-							i.fa.fa-home 
-							|  Home
-					li(class=(title === 'aboutus' ? 'active' : '')) 
-						a(href="#")
-							i.fa.fa-group 
-							|  About Us
-					li(class=(title === 'services' ? 'active' : '')) 
-						a(href="#")
-							i.fa.fa-wrench 
-							|  Services
-					li(class=(title === 'blog' ? 'active' : '')) 
-						a(href="#")
-							i.fa.fa-pencil 
-							|  Blog
-					li(class=(title === 'contact' ? 'active' : '')) 
-						a(href="#")
-							i.fa.fa-envelope 
-							|  Contact
-				form
-					span.search
-					input(
-						type = "text"
-						placeholder = "search"
-						)
-					a(href="#")
-						i.fa.fa-search
-		block content
+							i.fa.fa-search
+			block content
 
 		footer
 			.footer-row

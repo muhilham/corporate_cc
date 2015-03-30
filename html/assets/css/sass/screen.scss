@@ -21,6 +21,11 @@ body{
 	color : $f-body-col;
 	font-family:$f-body
 }
+
+.container{
+	width: 960px;
+	margin: 0 auto;
+}
 h1, h2, h3, h4, h5, h6{
 	color : $f-color;
 	font-family:$f-family, impact, sans-serif
