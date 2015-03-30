@@ -5,6 +5,7 @@
 
 @import "normalize";
 @import "compass/css3/transition";
+@import "compass/css3";
 
 /* Variables */
 $f-family : colossalis;
@@ -21,6 +22,8 @@ $col-hov-utube: #ff3333;
 
 $col-nav-border : #ccc;
 $col-nav-hov : #eee;
+
+$col-arrow : #444;
 
 @font-face{
 	font-family : colossalis;
@@ -164,5 +167,32 @@ nav{
 			color: $col-h3-logo;
 			text-decoration: none;
 		}
+	}
+}
+
+$_h : 260px;
+$_fsx : 30px;
+.slider{
+	background: $col-nav-hov url("../../images/content/slider-bg.jpg") no-repeat;
+	width: 960px;
+	height: $_h;
+	margin-top:20px;
+	position: relative;
+
+	.slider-prev,.slider-next{
+		position: absolute;
+		color: $col-arrow;
+		font-size: $_fsx;
+		text-decoration: none;
+		@include opacity(0.5);
+		top: ($_h/2) - ($_fsx/2);
+	}
+	
+	$offset : 11px;
+	.slider-prev{
+		left: $offset;
+	}
+	.slider-next{
+		right: $offset;
 	}
 }
