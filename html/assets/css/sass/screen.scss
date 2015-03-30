@@ -3,6 +3,9 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
+@import "normalize";
+@import "compass/css3/transition";
+
 /* Variables */
 $f-family : colossalis;
 $f-color : #ec8e08;
@@ -11,8 +14,6 @@ $f-body-col : #888;
 
 $col-h3-logo : #a1a1a1;
 
-
-@import "normalize";
 @font-face{
 	font-family : colossalis;
 	src: url('../font/Colossalis Bold.ttf')
@@ -67,10 +68,28 @@ h1, h2, h3, h4, h5, h6{
 		li {
 			display: inline-block;
 
-			a i{
-				color: $col-h3-logo;
-				font-size: 2.5em;
-				text-decoration: none;
+			a {
+				i{
+					color: $col-h3-logo;
+					font-size: 2.5em;
+					text-decoration: none;
+					@include transition( color 0.5s );
+				}
+
+				&:hover i{
+					&.fa-facebook-square{
+						color: #3B5998;
+					}
+					&.fa-twitter-square{
+						color: #4099ff;
+					}
+					&.fa-google-plus-square{
+						color: #d34836;
+					}
+					&.fa-youtube-square{
+						color: #ff3333;
+					}
+				}
 			}
 		}
 	}
