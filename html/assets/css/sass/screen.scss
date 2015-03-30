@@ -6,6 +6,8 @@
 /* Variables */
 $f-family : colossalis;
 $f-color : #ec8e08;
+$f-body : "Trbuchet MS", Tahoma, Arial, sans-serif;
+$f-body-col : #888;
 
 
 @import "normalize";
@@ -14,6 +16,11 @@ $f-color : #ec8e08;
 	src: url('../font/Colossalis Bold.ttf')
 }
 
+body{
+	border-top: 8px solid $f-color;
+	color : $f-body-col;
+	font-family:$f-body
+}
 h1, h2, h3, h4, h5, h6{
 	color : $f-color;
 	font-family:$f-family, impact, sans-serif

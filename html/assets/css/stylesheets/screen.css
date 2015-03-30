@@ -275,7 +275,14 @@ th {
   font-family: colossalis;
   src: url("../font/Colossalis Bold.ttf");
 }
-/* line 17, ../sass/screen.scss */
+/* line 19, ../sass/screen.scss */
+body {
+  border-top: 8px solid #ec8e08;
+  color: #888;
+  font-family: "Trbuchet MS", Tahoma, Arial, sans-serif;
+}
+
+/* line 24, ../sass/screen.scss */
 h1, h2, h3, h4, h5, h6 {
   color: #ec8e08;
   font-family: colossalis, impact, sans-serif;
