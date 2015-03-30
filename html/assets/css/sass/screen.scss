@@ -14,6 +14,13 @@ $f-body-col : #888;
 
 $col-h3-logo : #a1a1a1;
 
+$col-hov-fb: #3B5998;
+$col-hov-twit: #4099ff;
+$col-hov-gplus: #d34836;
+$col-hov-utube: #ff3333;
+
+$col-nav-border : #ccc;
+
 @font-face{
 	font-family : colossalis;
 	src: url('../font/Colossalis Bold.ttf')
@@ -78,16 +85,16 @@ h1, h2, h3, h4, h5, h6{
 
 				&:hover i{
 					&.fa-facebook-square{
-						color: #3B5998;
+						color: $col-hov-fb;
 					}
 					&.fa-twitter-square{
-						color: #4099ff;
+						color: $col-hov-twit;
 					}
 					&.fa-google-plus-square{
-						color: #d34836;
+						color: $col-hov-gplus;
 					}
 					&.fa-youtube-square{
-						color: #ff3333;
+						color: $col-hov-utube;
 					}
 				}
 			}
@@ -101,5 +108,44 @@ h1, h2, h3, h4, h5, h6{
 }
 
 nav{
+	border: 1px solid $col-nav-border;
 	clear: both;
+	width: 958px;
+	height: 45px;
+
+	ul.main-nav{
+		list-style-type: none;
+		float: left;
+		margin: 0;
+		padding: 0;
+
+		li{
+			margin-bottom: 0;
+			float: left;
+			// display: inline-block;
+			position: relative;
+
+			width: 100px;
+			height: 45px;
+
+			border-right:1px solid $col-nav-border;
+			
+			a{
+				// background-color: #fbb;
+				position: absolute;
+				color: $col-h3-logo;
+				text-decoration: none;
+				width: 100px;
+				height: 31px;
+				margin: auto;
+				text-align: center;
+				padding-top: 14px;
+				font-size: 14px;
+			}
+		}
+	}
+
+	form{
+		float: right;
+	}
 }
