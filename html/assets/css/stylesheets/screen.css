@@ -462,3 +462,28 @@ nav .search a {
 .slider .slider-next {
   right: 11px;
 }
+/* line 205, ../sass/screen.scss */
+.slider .slide .slide-image {
+  position: absolute;
+  left: 80px;
+  top: 14px;
+}
+/* line 210, ../sass/screen.scss */
+.slider .slide .slide-content {
+  position: absolute;
+  right: 80px;
+  width: 50%;
+}
+/* line 214, ../sass/screen.scss */
+.slider .slide .slide-content .slider-title {
+  font: 55px "Trbuchet MS", Tahoma, Arial, sans-serif;
+  font-weight: bold;
+  line-height: 35px;
+  margin-bottom: 5px;
+}
+/* line 219, ../sass/screen.scss */
+.slider .slide .slide-content .slider-title span {
+  color: #a1a1a1;
+  font-weight: normal;
+  font-size: 30px;
+}
