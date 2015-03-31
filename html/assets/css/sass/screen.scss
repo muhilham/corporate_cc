@@ -6,6 +6,7 @@
 @import "normalize";
 @import "compass/css3/transition";
 @import "compass/css3";
+@import "compass/utilities";
 
 /* Variables */
 $f-family : colossalis;
@@ -24,6 +25,11 @@ $col-nav-border : #ccc;
 $col-nav-hov : #eee;
 
 $col-arrow : #444;
+
+$col-slide-btn : #8bcf48;
+$col-hov-slide-btn : #9cdf59;
+
+$hover-time : 0.5s;
 
 @font-face{
 	font-family : colossalis;
@@ -84,7 +90,7 @@ h1, h2, h3, h4, h5, h6{
 					color: $col-h3-logo;
 					font-size: 2.5em;
 					text-decoration: none;
-					@include transition( color 0.5s );
+					@include transition( color $hover-time );
 				}
 
 				&:hover i{
@@ -143,7 +149,7 @@ nav{
 				text-align: center;
 				padding-top: 14px;
 				font-size: 14px;
-				@include transition( background-color 0.5s );
+				@include transition( background-color $hover-time );
 
 				&:hover{
 					background-color: $col-nav-hov;
@@ -185,7 +191,7 @@ $_fsx : 30px;
 		font-size: $_fsx;
 		text-decoration: none;
 		@include opacity(0.5);
-		@include transition(opacity .5s);
+		@include transition(opacity $hover-time);
 		top: ($_h/2) - ($_fsx/2);
 
 		&:hover{
@@ -225,7 +231,26 @@ $_fsx : 30px;
 			}
 
 			.slider-button{
+				display: inline-block;
+				font-weight: bold;
+				font-size: 16px;
+				@include border-radius(4px);
+				@include transition(background-color $hover-time);
+				background-color: $col-slide-btn;
+				color: #fff;
+				text-decoration: none;
+				width: 280px;
+				height: 40px;
+				padding: 12px;
 
+				&:hover{
+					background-color: $col-hov-slide-btn;
+				}
+
+				span{
+					font-size: 14px;
+					font-weight: normal;
+				}
 			}
 		}
 	}

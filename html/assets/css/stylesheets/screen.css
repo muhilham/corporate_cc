@@ -275,38 +275,38 @@ th {
   font-family: colossalis;
   src: url("../font/Colossalis Bold.ttf");
 }
-/* line 33, ../sass/screen.scss */
+/* line 39, ../sass/screen.scss */
 body {
   border-top: 8px solid #ec8e08;
   color: #888;
   font-family: "Trbuchet MS", Tahoma, Arial, sans-serif;
 }
 
-/* line 39, ../sass/screen.scss */
+/* line 45, ../sass/screen.scss */
 .container {
   width: 960px;
   margin: 0 auto;
 }
 
-/* line 43, ../sass/screen.scss */
+/* line 49, ../sass/screen.scss */
 h1, h2, h3, h4, h5, h6 {
   color: #ec8e08;
   font-family: colossalis, impact, sans-serif;
 }
 
-/* line 48, ../sass/screen.scss */
+/* line 54, ../sass/screen.scss */
 .logo {
   float: left;
   max-width: 50%;
 }
-/* line 52, ../sass/screen.scss */
+/* line 58, ../sass/screen.scss */
 .logo h2 {
   font-size: 3em;
   display: inline-block;
   margin-top: 0px;
   padding-right: 5px;
 }
-/* line 58, ../sass/screen.scss */
+/* line 64, ../sass/screen.scss */
 .logo h3 {
   border-left: 2px solid #a1a1a1;
   color: #a1a1a1;
@@ -317,23 +317,23 @@ h1, h2, h3, h4, h5, h6 {
   top: -.2em;
 }
 
-/* line 69, ../sass/screen.scss */
+/* line 75, ../sass/screen.scss */
 .social {
   float: right;
   max-width: 50%;
   text-align: right;
 }
-/* line 74, ../sass/screen.scss */
+/* line 80, ../sass/screen.scss */
 .social ul {
   list-style-type: none;
   padding-left: 0;
   margin-top: 0;
 }
-/* line 79, ../sass/screen.scss */
+/* line 85, ../sass/screen.scss */
 .social ul li {
   display: inline-block;
 }
-/* line 83, ../sass/screen.scss */
+/* line 89, ../sass/screen.scss */
 .social ul li a i {
   color: #a1a1a1;
   font-size: 2.5em;
@@ -343,43 +343,43 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-transition: color 0.5s;
   transition: color 0.5s;
 }
-/* line 91, ../sass/screen.scss */
+/* line 97, ../sass/screen.scss */
 .social ul li a:hover i.fa-facebook-square {
   color: #3B5998;
 }
-/* line 94, ../sass/screen.scss */
+/* line 100, ../sass/screen.scss */
 .social ul li a:hover i.fa-twitter-square {
   color: #4099ff;
 }
-/* line 97, ../sass/screen.scss */
+/* line 103, ../sass/screen.scss */
 .social ul li a:hover i.fa-google-plus-square {
   color: #d34836;
 }
-/* line 100, ../sass/screen.scss */
+/* line 106, ../sass/screen.scss */
 .social ul li a:hover i.fa-youtube-square {
   color: #ff3333;
 }
-/* line 108, ../sass/screen.scss */
+/* line 114, ../sass/screen.scss */
 .social p {
   font-size: .86em;
   margin: 10px 0 2px 0;
 }
 
-/* line 114, ../sass/screen.scss */
+/* line 120, ../sass/screen.scss */
 nav {
   border: 1px solid #ccc;
   clear: both;
   width: 958px;
   height: 45px;
 }
-/* line 120, ../sass/screen.scss */
+/* line 126, ../sass/screen.scss */
 nav ul.main-nav {
   list-style-type: none;
   float: left;
   margin: 0;
   padding: 0;
 }
-/* line 126, ../sass/screen.scss */
+/* line 132, ../sass/screen.scss */
 nav ul.main-nav li {
   margin-bottom: 0;
   float: left;
@@ -388,7 +388,7 @@ nav ul.main-nav li {
   height: 45px;
   border-right: 1px solid #ccc;
 }
-/* line 136, ../sass/screen.scss */
+/* line 142, ../sass/screen.scss */
 nav ul.main-nav li a {
   position: absolute;
   color: #a1a1a1;
@@ -404,30 +404,30 @@ nav ul.main-nav li a {
   -webkit-transition: background-color 0.5s;
   transition: background-color 0.5s;
 }
-/* line 148, ../sass/screen.scss */
+/* line 154, ../sass/screen.scss */
 nav ul.main-nav li a:hover {
   background-color: #eee;
 }
-/* line 155, ../sass/screen.scss */
+/* line 161, ../sass/screen.scss */
 nav .search {
   float: right;
   color: #a1a1a1;
   margin: 10px 10px 0 0;
 }
-/* line 159, ../sass/screen.scss */
+/* line 165, ../sass/screen.scss */
 nav .search input {
   border: 1px solid #a1a1a1;
   background-color: #eee;
   border-radius: 300px;
   padding-left: 8px;
 }
-/* line 166, ../sass/screen.scss */
+/* line 172, ../sass/screen.scss */
 nav .search a {
   color: #a1a1a1;
   text-decoration: none;
 }
 
-/* line 175, ../sass/screen.scss */
+/* line 181, ../sass/screen.scss */
 .slider {
   background: #eee url("../../images/content/slider-bg.jpg") no-repeat;
   width: 960px;
@@ -435,7 +435,7 @@ nav .search a {
   margin-top: 20px;
   position: relative;
 }
-/* line 182, ../sass/screen.scss */
+/* line 188, ../sass/screen.scss */
 .slider .slider-prev, .slider .slider-next {
   position: absolute;
   color: #444;
@@ -449,41 +449,69 @@ nav .search a {
   transition: opacity 0.5s;
   top: 115px;
 }
-/* line 191, ../sass/screen.scss */
+/* line 197, ../sass/screen.scss */
 .slider .slider-prev:hover, .slider .slider-next:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
   opacity: 1;
 }
-/* line 197, ../sass/screen.scss */
+/* line 203, ../sass/screen.scss */
 .slider .slider-prev {
   left: 11px;
 }
-/* line 200, ../sass/screen.scss */
+/* line 206, ../sass/screen.scss */
 .slider .slider-next {
   right: 11px;
 }
-/* line 205, ../sass/screen.scss */
+/* line 211, ../sass/screen.scss */
 .slider .slide .slide-image {
   position: absolute;
   left: 80px;
   top: 14px;
 }
-/* line 210, ../sass/screen.scss */
+/* line 216, ../sass/screen.scss */
 .slider .slide .slide-content {
   position: absolute;
   right: 80px;
   width: 50%;
 }
-/* line 214, ../sass/screen.scss */
+/* line 220, ../sass/screen.scss */
 .slider .slide .slide-content .slider-title {
   font: 55px "Trbuchet MS", Tahoma, Arial, sans-serif;
   font-weight: bold;
   line-height: 35px;
   margin-bottom: 5px;
 }
-/* line 219, ../sass/screen.scss */
+/* line 225, ../sass/screen.scss */
 .slider .slide .slide-content .slider-title span {
   color: #a1a1a1;
   font-weight: normal;
   font-size: 30px;
+}
+/* line 233, ../sass/screen.scss */
+.slider .slide .slide-content .slider-button {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 16px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  -moz-transition: background-color 0.5s;
+  -o-transition: background-color 0.5s;
+  -webkit-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+  background-color: #8bcf48;
+  color: #fff;
+  text-decoration: none;
+  width: 280px;
+  height: 40px;
+  padding: 12px;
+}
+/* line 246, ../sass/screen.scss */
+.slider .slide .slide-content .slider-button:hover {
+  background-color: #9cdf59;
+}
+/* line 250, ../sass/screen.scss */
+.slider .slide .slide-content .slider-button span {
+  font-size: 14px;
+  font-weight: normal;
 }
